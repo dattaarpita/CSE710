@@ -1,1 +1,31 @@
-Alzheimer’s disease (AD) is a progressive neurodegenerative disorder that poses a significant global public health challenge. Early and accurate detection remains essential for effective intervention. This study introduces a novel multimodal deep learning framework for binary classification of Alzheimer’s disease versus healthy controls, utilizing electroencephalography (EEG) signals combined with demographic features. A one-dimensional Convolutional Neural Network (CNN) is used for EEG feature extraction and is integrated with a demographic sub-network that processes age, IQ, and EQ. A Genetic Algorithm (GA) automates hyperparameter optimization, resulting in a GA-optimized model that significantly outperforms a baseline CNN. The system is evaluated on the Neurazum Disorders and Diagnosis EEG Dataset (v5). The GA-optimized model achieves an AUC of 0.86 and 86% accuracy on the held-out test set, compared to an AUC of 0.52 for the unoptimized baseline. Explainable AI (XAI) analysis using SHAP (SHapley Additive exPlanations) identifies the most influential EEG channels and demographic variables contributing to predictions, thereby enhancing clinical interpretability. These findings underscore the effectiveness of evolutionary hyperparameter search and multimodal fusion for EEG-based AD detection.
+Alzheimer’s Disease Detection from EEG Signals Using a Genetic Algorithm-Optimized Multimodal CNN with Explainable AI
+Overview
+
+This project presents a multimodal deep learning framework for Alzheimer's disease detection using EEG signals and demographic features (Age, IQ, and EQ).
+
+Objectives
+
+•	Detect Alzheimer's disease from EEG data
+•	Improve model performance using Genetic Algorithms
+•	Provide model interpretability using SHAP
+
+Dataset
+
+Neurazum Disorders and Diagnosis EEG Dataset (v5)
+
+Methodology
+
+•	1D CNN for EEG feature extraction
+•	Demographic feature fusion
+•	Genetic Algorithm for hyperparameter optimization
+•	SHAP for Explainable AI
+
+Results
+
+•	Accuracy: 86%
+•	AUC: 0.86
+•	Significant improvement over baseline CNN
+
+Technologies
+
+Python, TensorFlow/Keras, Scikit-learn, SHAP, Genetic Algorithm
